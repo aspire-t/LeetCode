@@ -6,7 +6,6 @@ var canPlaceFlowers = function (flowerbed, n) {
   flowerbed.push(0)
   for (let i = 0; i < flowerbed.length - 1; i++) {
     if (flowerbed[i] === 0) {
-
       if (i == 0 && flowerbed[1] === 0) {
         count++
         i++
@@ -14,7 +13,10 @@ var canPlaceFlowers = function (flowerbed, n) {
         count++
         i++
       }
-      console.log(count, i)
+    }
+    // 小优化，如果数量已经超过了，可以提前跳出
+    if (count >= n) {
+      return true
     }
   }
 
