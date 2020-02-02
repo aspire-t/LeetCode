@@ -30,7 +30,7 @@ var restoreIpAddresses = function (str) {
   search(r, str)
   return r
 }
-console.log(restoreIpAddresses('25525511135'))
+// console.log(restoreIpAddresses('25525511135'))
 
 /**
  * @param {string} s
