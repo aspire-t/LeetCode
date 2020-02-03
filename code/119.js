@@ -2,6 +2,7 @@
  * @param {number} rowIndex
  * @return {number[]}
  */
+// 杨辉三角
 var getRow = function (rowIndex) {
   if (rowIndex == 0) {
     return [1]
@@ -23,6 +24,6 @@ var getRow = function (rowIndex) {
   }
 
   return result
-};
+}
 
 console.log(getRow(5))
